@@ -9,7 +9,7 @@ class NeuralNetworkController(BaseController):
         Neural network wrapper for NNC.
         Provide the neural network as a submodule.
         """
-        super(NeuralNetworkController, self).__init__()
+        super().__init__()
         self.neural_net = neural_net
 
     def forward(self, t, x) -> torch.Tensor:
@@ -19,7 +19,7 @@ class NeuralNetworkController(BaseController):
         and have the required dimensionality and values for control.
         :param t: A tensor containing time values, shape: `[b, 1]` or `[1]` for shared time
         across batch.
-        :param x: A tensor containing state values, shape: `[b, m, n ]`
+        :param x: A tensor containing state values, shape: `[b, m, n_nodes ]`
         :return: A tensor containing control values, shape: `[b, ?, ?]`
         """
         return self.neural_net(t, x)
@@ -50,9 +50,9 @@ class NNCDynamics(torch.nn.Module):
         Preserves gradient flows for training.
         :param t: A tensor containing time values, shape: `[b, 1]` or `[1]` for shared time
         across batch.
-        :param x: A tensor containing state values, shape: `[b, m, n ]`
+        :param x: A tensor containing state values, shape: `[b, m, n_nodes ]`
         :return: `dx` A tensor containing the derivative (**amount of change**) of `x`,
-        shape: `[b, m, n]`
+        shape: `[b, m, n_nodes]`
         """
 
         u = self.nnc(t, x)

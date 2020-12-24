@@ -1,6 +1,6 @@
 import torch
 
-from nnc.helpers.torch_utils.numerical_approximations import simpson
+from nnc.helpers.torch_utils.numerics import simpson
 from nnc.helpers.torch_utils.expm.expm import expm as torch_expm
 from nnc.controllers.base import BaseController
 
@@ -25,9 +25,9 @@ class ControllabiltyGrammianController(BaseController):
         :param use_inverse: whether to use :meth:`torch.inverse` or `torch.solve` for the inverse
         term calculations involved in the controllability grammian estimation.
         """
-        super(ControllabiltyGrammianController, self).__init__()
-        self.A = alpha  # n x n
-        self.B = beta  # n x m
+        super().__init__()
+        self.A = alpha  # n_nodes x n_nodes
+        self.B = beta  # n_nodes x m
 
         self.Tf = t_infs
 
@@ -45,8 +45,22 @@ class ControllabiltyGrammianController(BaseController):
                            self.Tf / self.simpson_evals,
                            progress_bar=progress_bar
                            )
-        self.x0 = x0s.unsqueeze(-1)  # batch x  n x 1
-        self.xTf = x_infs.unsqueeze(-1)  # batch x n x 1
+        self.x0 = x0s.unsqueeze(-1)  # batch x  n_nodes x 1
+        self.xTf = x_infs.unsqueeze(-1)  # batch x n_nodes x 1
+
+        if len(self.x0.shape) == 4 and self.x0.shape[1] == 1:
+            self.x0 = self.x0.squeeze(1)
+
+        if len(self.xTf.shape) == 4 and self.xTf.shape[1] == 1:
+                self.xTf = self.xTf.squeeze(1)
+
+        if len(self.x0.shape) > 3 or  len(self.xTf.shape) > 3:
+            print(self.x0.shape)
+            raise ValueError('For this controller, please do not provide state variables '
+                             'dimension! Provided '
+                             'state tensors must have shape of length 2 for '
+                             'accurate '
+                             'calculations!')
 
         self.vTf = self.xTf - torch.matmul(self.expA, self.x0)
 

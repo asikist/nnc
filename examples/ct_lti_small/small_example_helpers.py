@@ -24,7 +24,7 @@ class EluTimeControl(torch.nn.Module):
         """
         Control calculation via a fully connected NN.
         :param t: A scalar or a batch with scalars, shape: `[b, 1]` or '[1]'
-        :param x: input_states for all nodes, shape `[b, m, n]`
+        :param x: input_states for all nodes, shape `[b, m, n_nodes]`
         :return:
         """
         # sanity check to make sure we don't propagate through time

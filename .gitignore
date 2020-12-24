@@ -216,7 +216,14 @@ ENV/
 # Data
 *.csv
 *.torch
+*.pt
 
 # pip
-setup.py
-
+# setup.py
+/experiments/*
+experiments/*
+experiments
+/experiments/
+data/
+data/*
+data.zip
