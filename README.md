@@ -1,14 +1,10 @@
-# NODEC: NODEC: Neural Ordinary Differential Equation Control
+#NNC: Neural Network Control 
 
-A framework for neural network control of dynamical systems over graphs.
-The current repository is based on the work presented in the  paper:
-- Asikis, T., Böttcher, L., & Antulov-Fantulin, N. (2020). NODEC: Neural Ordinary Differential Equation Control of Dynamical Systems on Graphs.
+The `nnc` module aims to offer neural network controllers in pytorch, such as neural PIDs, Model Predictive control and other baselines.
 
-The paper updated version will be found with many new experiments and content in:
-[arXiv](https://arxiv.org/abs/2006.09773) preprint arXiv:2006.09773. 
-Please cite the paper of this repository is useful for your research.
+## NODEC: NODEC: Neural Ordinary Differential Equation Control
 
-The NNC module aims to offer neural network controllers in pytorch.
+
 NODEC is a novel method that controls dynamical systems that describe the evolution and interactions of networked components.
 We refer to these components as state variables on a graph.
 A graph consists of nodes that are conncected with edges.
@@ -38,23 +34,37 @@ Module dependencies (`nnc/*`):
 - numpy 1.17.2+
 - scipy =1.3.1+
 
-As neural networks rely on stochastic initialization, results may vary from paper if a bad initialization is used.
-Our current seed setting proceedure is not enough to ensure replication,
-but with a few runs reproducability of similar results to the paper is possible.
-
-Example dependencies (for scripts under `examples/*`):
+Example dependencies (`examples/*`):
 - plotly 4+
 - tqdm
 - pandas
 
-#### Project structure
+### Hardware
+We tested most our experiments on both CUDA and CPU.
+We advise using CUDA with more than 8GB of VRAM for training of NODEC.
+
+## Project structure
 In code you may find 4 folders, and their contents are described as:
 - `nnc` the main neural network control module with utilities and baselines for neural network control.
 - `nodec_experiments` the folder containing the scripts that train and evaluate NODEC vs other baselines.
 - `test`: a folder with unit tests on some methods, which in the future will expand to achieve full coverage.
 - `examples`: a folder with unit tests, which in the future will expand to achieve full coverage of the project.
+- `../data`: a folder that contains the parameter and result data used by the scripts in the `experiments` folder to generate plots, train or evaluate.
+- `../results`: a folder that contains the output of the scripts from `nodec_experiments` folder. In case you need to use data from the `results` folder please copy paste the date in the coresponding `data` folder or change the paths in the provided scripts.
 
-### Hardware
-We tested most our experiments on both CUDA and CPU.
-We advise using CUDA with more than 8GB of VRAM for training of NODEC.
+## Further Notes
+
+As neural networks rely on stochastic initialization, results may vary from paper if a different weight initialization is used.
+Our current seed settings do not replicate exact results on different machines,
+but with a few runs reproducability of similar results to the paper is possible.
+The seed setting will be further examined in the future.
+
+The paper updated version will be found with many new experiments and content in:
+[arXiv](https://arxiv.org/abs/2006.09773) preprint arXiv:2006.09773. 
+Please cite the paper if this repository is useful for your research.
+
+Data of the paper experiments can be found at: [IEEEDataPort](http://ieee-dataport.org/3452).
+These data contain pretrained models and evluation results.
+
+Please cite the paper in case you use the repository.
 

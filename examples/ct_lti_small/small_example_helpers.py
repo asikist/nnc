@@ -230,7 +230,7 @@ def plot_trajectory_comparison(linear_dynamics,
     nnc_trajectory_line = px.line(nnc_trajectory, x='x1', y='x2').data[0]
     nnc_trajectory_line.line.color = '#ff9f00'
     nnc_trajectory_line.line.dash = 'dot'
-    nnc_trajectory_line.name = 'NNC'
+    nnc_trajectory_line.name = 'NODEC'
     nnc_trajectory_line.showlegend = True
     fig = go.Figure([vector_field, x_start, x_goal, oc_trajectory_line, nnc_trajectory_line])
     fig = fig.update_layout(plot_base_template(x1_min, x1_max, x2_min, x2_max))
@@ -283,7 +283,7 @@ def compare_trajectories(linear_dynamics,
 
     ocen=go.Scatter(x=time, y=energy_oc, name='OC',
                mode='lines', line=dict(color='#271f30', dash='dot'))
-    nncen=go.Scatter(x=time, y=energy_nnc, name='NNC',
+    nncen=go.Scatter(x=time, y=energy_nnc, name='NODEC',
                mode='lines', line=dict(color='#ff9f00', dash='dot'))
     fig_energies = go.Figure([ocen,nncen])
     figs = make_subplots(1, 2)

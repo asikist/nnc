@@ -128,7 +128,7 @@ def prepare_graph_dynamics_parameters(adjacency_matrix,
 if __name__ == '__main__':
     torch.manual_seed(pt_seed)
     n_nodes = 1024
-    data_path = '../data/parameters/kuramoto/'
+    data_path = '../../../data/parameters/kuramoto/'
     os.makedirs(data_path, exist_ok=True)
     estimation_margin = 0.1
 
