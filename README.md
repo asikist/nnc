@@ -1,4 +1,4 @@
-#NNC: Neural Network Control 
+# NNC: Neural Network Control 
 
 The `nnc` module aims to offer neural network controllers in pytorch, such as neural PIDs, Model Predictive control and other baselines.
 
