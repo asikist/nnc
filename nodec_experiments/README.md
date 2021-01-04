@@ -5,7 +5,9 @@ Pleae use the accompanied paper for more information.
 
 ## Existing Data
 Existing data for interactive plots based on the paper results are found under the folder `../../data/`, which is provided seperately in a different repository (it contains several GB of data):
+
 https://ieee-dataport.org/documents/neural-ordinary-differential-equation-control-dynamics-graphs
+
 The data folder needs to be placed in the same directory as the git repository folder.
 
 ## Data Generation
