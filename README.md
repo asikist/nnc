@@ -56,14 +56,17 @@ In code you may find 4 folders, and their contents are described as:
 
 As neural networks rely on stochastic initialization, results may vary from paper if a different weight initialization is used.
 Our current seed settings do not replicate exact results on different machines,
-but with a few runs reproducability of similar results to the paper is possible.
+but with a few runs it is possible to generate similar results to the paper.
 The seed setting will be further examined in the future.
 
 The paper updated version will be found with many new experiments and content in:
 [arXiv](https://arxiv.org/abs/2006.09773) preprint arXiv:2006.09773. 
 Please cite the paper if this repository is useful for your research.
 
-Data of the paper experiments can be found at: [IEEEDataPort](http://ieee-dataport.org/3452).
+Data of the paper experiments can be found at: 
+
+[IEEEDataPort](http://ieee-dataport.org/3452).
+
 These data contain pretrained models and evluation results.
 
 Please cite the paper in case you use the repository.
