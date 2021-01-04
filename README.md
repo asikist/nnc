@@ -63,9 +63,7 @@ The paper updated version will be found with many new experiments and content in
 [arXiv](https://arxiv.org/abs/2006.09773) preprint arXiv:2006.09773. 
 Please cite the paper if this repository is useful for your research.
 
-Data of the paper experiments can be found at: 
-
-[IEEEDataPort](http://ieee-dataport.org/3452).
+Data of the paper experiments can be found at [IEEEDataPort](http://ieee-dataport.org/3452).
 
 These data contain pretrained models and evluation results.
 
