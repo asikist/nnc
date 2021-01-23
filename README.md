@@ -72,7 +72,7 @@ Please cite the paper if this repository is useful for your research.
   title={Neural Ordinary Differential Equation Control of Dynamics on Graphs},
   author={Asikis, Thomas and B{\"o}ttcher, Lucas and Antulov-Fantulin, Nino},
   journal={arXiv preprint arXiv:2006.09773},
-  year={2020}
+  year={2020},
   url = {https://arxiv.org/abs/2006.09773}
 }
 ```
