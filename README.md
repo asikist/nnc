@@ -2,8 +2,7 @@
 
 The `nnc` module aims to offer neural network controllers in pytorch, such as neural PIDs, Model Predictive control and other baselines.
 
-## NODEC: NODEC: Neural Ordinary Differential Equation Control
-
+## NODEC: Neural Ordinary Differential Equation Control
 
 NODEC is a novel method that controls dynamical systems that describe the evolution and interactions of networked components.
 We refer to these components as state variables on a graph.
