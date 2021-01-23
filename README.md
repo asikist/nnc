@@ -61,11 +61,21 @@ The seed setting will be further examined in the future.
 
 The paper updated version will be found with many new experiments and content in:
 [arXiv](https://arxiv.org/abs/2006.09773) preprint arXiv:2006.09773. 
-Please cite the paper if this repository is useful for your research.
 
 Data of the paper experiments can be found at [IEEEDataPort](http://ieee-dataport.org/3452).
 
 These data contain pretrained models and evluation results.
 
-Please cite the paper in case you use the repository.
+Please cite the paper if this repository is useful for your research.
+
+```
+@article{asikis2020nnc,
+  title={Neural Ordinary Differential Equation Control of Dynamics on Graphs},
+  author={Asikis, Thomas and B{\"o}ttcher, Lucas and Antulov-Fantulin, Nino},
+  journal={arXiv preprint arXiv:2006.09773},
+  year={2020}
+  url = {https://arxiv.org/abs/2006.09773}
+}
+```
+
 
