@@ -53,19 +53,19 @@ In code you may find 4 folders, and their contents are described as:
 
 ## Further Notes
 
-As neural networks rely on stochastic initialization, results may vary from paper if a different weight initialization is used.
+As neural networks rely on stochastic initialization, results may vary compared to those described in our paper if a different weight initialization is used.
 Our current seed settings do not replicate exact results on different machines,
 but with a few runs it is possible to generate similar results to the paper.
 The seed setting will be further examined in the future.
 
-The paper updated version will be found with many new experiments and content in:
+For an overview of NODEC and its application to various dynamical systems, see
 [arXiv](https://arxiv.org/abs/2006.09773) preprint arXiv:2006.09773. 
 
-Data of the paper experiments can be found at [IEEEDataPort](http://ieee-dataport.org/3452).
+Data of the numerical experiments can be found at [IEEEDataPort](http://ieee-dataport.org/3452).
 
 These data contain pretrained models and evluation results.
 
-Please cite the paper if this repository is useful for your research.
+Please cite our work if this repository is useful for your research.
 
 ```
 @article{asikis2020nnc,
@@ -74,6 +74,12 @@ Please cite the paper if this repository is useful for your research.
   journal={arXiv preprint arXiv:2006.09773},
   year={2020},
   url = {https://arxiv.org/abs/2006.09773}
+}
+@article{boettcher2021implicit,
+  title={Implicit energy regularization of neural ordinary-differential-equation control},
+  author={B{\"o}ttcher, Lucas and Antulov-Fantulin, Nino and Asikis, Thomas},
+  journal={preprint},
+  year={2021}
 }
 ```
 
