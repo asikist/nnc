@@ -59,7 +59,7 @@ but with a few runs it is possible to generate similar results to the paper.
 The seed setting will be further examined in the future.
 
 For an overview of NODEC and its application to various dynamical systems, see
-[arXiv](https://arxiv.org/abs/2006.09773) preprint arXiv:2006.09773. 
+[arXiv](https://arxiv.org/abs/2006.09773) preprint arXiv:2006.09773 and [arXiv](https://arxiv.org/abs/2103.06525) preprint arXiv:2103.06525. 
 
 Data of the numerical experiments can be found at [IEEEDataPort](http://ieee-dataport.org/3452).
 
@@ -78,8 +78,9 @@ Please cite our work if this repository is useful for your research.
 @article{boettcher2021implicit,
   title={Implicit energy regularization of neural ordinary-differential-equation control},
   author={B{\"o}ttcher, Lucas and Antulov-Fantulin, Nino and Asikis, Thomas},
-  journal={preprint},
-  year={2021}
+  journal={arXiv preprint arXiv:2103.06525},
+  year={2021},
+  url={https://arxiv.org/abs/2103.06525}
 }
 ```
 
