@@ -59,7 +59,7 @@ but with a few runs it is possible to generate similar results to the paper.
 The seed setting will be further examined in the future.
 
 For an overview of NODEC and its application to various dynamical systems, see
-[arXiv](https://arxiv.org/abs/2006.09773) preprint arXiv:2006.09773 and [arXiv](https://arxiv.org/abs/2103.06525) preprint arXiv:2103.06525. 
+our arXiv preprints [arXiv:2006.09773](https://arxiv.org/abs/2006.09773) and [arXiv:2103.06525](https://arxiv.org/abs/2103.06525). 
 
 Data of the numerical experiments can be found at [IEEEDataPort](http://ieee-dataport.org/3452).
 
