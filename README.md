@@ -18,6 +18,8 @@ For now NNC and NODEC work only with pytorch, and we offer a very simple yet des
 - `examples/ct_lti_small/small_example.ipynb` or `examples/ct_lti_small/small_example.ipynb`
 - [Google Collab](https://colab.research.google.com/github/asikist/nnc/blob/master/examples/ct_lti_small/small_example.ipynb)
 
+A comparison between adjoint-gradient-method (AGM) and NODEC for Kuramoto dynamics control can be found in ``nodec_experiments/ multiplicative_kuramoto``.
+
 The repository will be updated regularly with latest research work and applications.
 Our aim is to showcase the capabilities of NODEC, especially for high-dimensional non-linear dynamics.
 
