@@ -6,7 +6,7 @@ The `nnc` module aims to offer neural network controllers in pytorch, such as ne
 
 NODEC is a novel method that controls dynamical systems that describe the evolution and interactions of networked components.
 We refer to these components as state variables on a graph.
-A graph consists of nodes that are conncected with edges.
+A graph consists of nodes that are connected with edges.
 Each node is assigned a state variable value, and this value evolves through time according to some interaction rules that are described in the form of an 
 ordinary differential equation.
 External control signals may be applied to a subset of nodes to guide the evolution of the system towards a target state.
@@ -18,7 +18,7 @@ For now NNC and NODEC work only with pytorch, and we offer a very simple yet des
 - `examples/ct_lti_small/small_example.ipynb` or `examples/ct_lti_small/small_example.ipynb`
 - [Google Collab](https://colab.research.google.com/github/asikist/nnc/blob/master/examples/ct_lti_small/small_example.ipynb)
 
-A comparison between adjoint-gradient-method (AGM) and NODEC for Kuramoto dynamics control can be found in ``nodec_experiments/ multiplicative_kuramoto``.
+A comparison between adjoint-gradient-method (AGM) and NODEC for Kuramoto dynamics control can be found in ``nodec_experiments/multiplicative_kuramoto``.
 
 The repository will be updated regularly with latest research work and applications.
 Our aim is to showcase the capabilities of NODEC, especially for high-dimensional non-linear dynamics.
@@ -49,9 +49,9 @@ In code you may find 4 folders, and their contents are described as:
 - `nnc` the main neural network control module with utilities and baselines for neural network control.
 - `nodec_experiments` the folder containing the scripts that train and evaluate NODEC vs other baselines.
 - `test`: a folder with unit tests on some methods, which in the future will expand to achieve full coverage.
-- `examples`: a folder with unit tests, which in the future will expand to achieve full coverage of the project.
+- `examples`: a folder with small-scale examples, which aid in understanding how NODEC works.
 - `../data`: a folder that contains the parameter and result data used by the scripts in the `experiments` folder to generate plots, train or evaluate.
-- `../results`: a folder that contains the output of the scripts from `nodec_experiments` folder. In case you need to use data from the `results` folder please copy paste the date in the coresponding `data` folder or change the paths in the provided scripts.
+- `../results`: a folder that contains the output of the scripts from `nodec_experiments` folder. In case you need to use data from the `results` folder please copy paste the date in the corresponding `data` folder or change the paths in the provided scripts.
 
 ## Further Notes
 
@@ -65,7 +65,7 @@ our arXiv preprints [arXiv:2006.09773](https://arxiv.org/abs/2006.09773) and [ar
 
 Data of the numerical experiments can be found at [IEEEDataPort](http://ieee-dataport.org/3452).
 
-These data contain pretrained models and evluation results.
+These data contain pretrained models and evaluation results.
 
 Please cite our work if this repository is useful for your research.
 
