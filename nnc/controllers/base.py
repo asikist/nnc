@@ -9,7 +9,7 @@ class BaseController(ABC, nn.Module):
         """
         The template for a controller class.
         """
-        super(BaseController, self).__init__()
+        super().__init__()
 
     @abstractmethod
     def forward(self, t: torch.Tensor, x: torch.Tensor) -> torch.Tensor:
