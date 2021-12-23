@@ -73,15 +73,15 @@ Please cite our work if this repository is useful for your research.
 @article{asikis2020nnc,
   title={Neural Ordinary Differential Equation Control of Dynamics on Graphs},
   author={Asikis, Thomas and B{\"o}ttcher, Lucas and Antulov-Fantulin, Nino},
-  journal={arXiv preprint arXiv:2006.09773},
-  year={2020},
+  journal={Physical Review Research (in press)},
+  year={2022},
   url = {https://arxiv.org/abs/2006.09773}
 }
 @article{boettcher2021implicit,
-  title={Implicit energy regularization of neural ordinary-differential-equation control},
+  title={AI Pontryagin or how neural networks learn to control dynamical systems},
   author={B{\"o}ttcher, Lucas and Antulov-Fantulin, Nino and Asikis, Thomas},
-  journal={arXiv preprint arXiv:2103.06525},
-  year={2021},
+  journal={Nature Communications (in press)},
+  year={2022},
   url={https://arxiv.org/abs/2103.06525}
 }
 ```
