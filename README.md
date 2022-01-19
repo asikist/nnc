@@ -61,7 +61,7 @@ but with a few runs it is possible to generate similar results to the paper.
 The seed setting will be further examined in the future.
 
 For an overview of NODEC and its application to various dynamical systems, see
-our arXiv preprints [arXiv:2006.09773](https://arxiv.org/abs/2006.09773) and [arXiv:2103.06525](https://arxiv.org/abs/2103.06525). 
+our arXiv preprint [arXiv:2006.09773](https://arxiv.org/abs/2006.09773) (soon to appear in Physical Review Research) and our work on [AI Pontryagin](https://www.nature.com/articles/s41467-021-27590-0). 
 
 Data of the numerical experiments can be found at [IEEEDataPort](http://ieee-dataport.org/3452).
 
@@ -77,12 +77,14 @@ Please cite our work if this repository is useful for your research.
   year={2022},
   url = {https://arxiv.org/abs/2006.09773}
 }
-@article{boettcher2021implicit,
+@article{AIPontryagin,
   title={AI Pontryagin or how neural networks learn to control dynamical systems},
   author={B{\"o}ttcher, Lucas and Antulov-Fantulin, Nino and Asikis, Thomas},
-  journal={Nature Communications (in press)},
+  journal={Nature Communications},
   year={2022},
-  url={https://arxiv.org/abs/2103.06525}
+  volume={13},
+  pages={333},
+  url={https://www.nature.com/articles/s41467-021-27590-0}
 }
 ```
 
