@@ -322,7 +322,7 @@ def animate_energy(alldf, linear_dynamics, oc_baseline, x0, T, n_points=40):
     mapper = dict((v, k) for (k, v) in enumerate(alldf['animation_frame'].unique().tolist()))
     alldf['animation_frame'] = alldf['animation_frame'].map(mapper)
     alldf['energy'] = (alldf['u'] ** 2) * T / 39
-    alldf['energy'] = alldf.groupby(['lr', 'sample_id'])['lr', 'sample_id', 'energy'].cumsum()
+    alldf['energy'] = alldf.groupby(['lr', 'sample_id'])[['lr', 'sample_id', 'energy']].cumsum()
     alldf['exact_time'] = alldf['time'] * T / 39
     oc_trajectory['energy'] = (oc_trajectory['u'] ** 2) * T / 39
     fig_energy_anim = px.line(alldf, x='exact_time', y='energy',
