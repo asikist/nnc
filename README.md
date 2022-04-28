@@ -73,9 +73,11 @@ Please cite our work if this repository is useful for your research.
 @article{asikis2020nnc,
   title={Neural Ordinary Differential Equation Control of Dynamics on Graphs},
   author={Asikis, Thomas and B{\"o}ttcher, Lucas and Antulov-Fantulin, Nino},
-  journal={Physical Review Research (in press)},
+  journal={Physical Review Research},
+  volum={4},
+  pages={013221},
   year={2022},
-  url = {https://arxiv.org/abs/2006.09773}
+  url = {https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.4.013221}
 }
 @article{AIPontryagin,
   title={AI Pontryagin or how neural networks learn to control dynamical systems},
