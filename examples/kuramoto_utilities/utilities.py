@@ -12,8 +12,8 @@ def generate_complete_graph(n=225):
     adjacency_matrix = torch.tensor(adjacency_matrix,
                                     dtype=torch.float
                                     )
-    os.makedirs('../data/', exist_ok=True)
-    torch.save(adjacency_matrix, '../data/complete_graph_adjacency.pt')
+    os.makedirs('../../data/', exist_ok=True)
+    torch.save(adjacency_matrix, '../../data/complete_graph_adjacency.pt')
 
 
 def generate_erdos_renyi(n=225, p=0.3, seed=1):
@@ -22,8 +22,8 @@ def generate_erdos_renyi(n=225, p=0.3, seed=1):
     adjacency_matrix = torch.tensor(adjacency_matrix,
                                     dtype=torch.float
                                     )
-    os.makedirs('../data/', exist_ok=True)
-    torch.save(adjacency_matrix, '../data/erdos_renyi_adjacency_%d.pt'%n)
+    os.makedirs('../../data/', exist_ok=True)
+    torch.save(adjacency_matrix, '../../data/erdos_renyi_adjacency_%d.pt'%n)
 
 
 def generate_square_lattice(side_size=15, seed=1):
@@ -32,8 +32,8 @@ def generate_square_lattice(side_size=15, seed=1):
     adjacency_matrix = torch.tensor(adjacency_matrix,
                                     dtype=torch.float
                                     )
-    os.makedirs('../data/', exist_ok=True)
-    torch.save(adjacency_matrix, '../data/square_lattice_adjacency.pt')
+    os.makedirs('../../data/', exist_ok=True)
+    torch.save(adjacency_matrix, '../../data/square_lattice_adjacency.pt')
 
 
 def generate_watts_strogatz(n=225, p=0.3, k=5, seed=1):
@@ -42,8 +42,8 @@ def generate_watts_strogatz(n=225, p=0.3, k=5, seed=1):
     adjacency_matrix = torch.tensor(adjacency_matrix,
                                     dtype=torch.float
                                     )
-    os.makedirs('../data/', exist_ok=True)
-    torch.save(adjacency_matrix, '../data/watts_strogatz_adjacency.pt')
+    os.makedirs('../../data/', exist_ok=True)
+    torch.save(adjacency_matrix, '../../data/watts_strogatz_adjacency.pt')
 
 
 def generate_parameters(total_time,
@@ -65,12 +65,12 @@ def generate_parameters(total_time,
     parameters['theta_0']             = theta_0
     parameters['total_time']          = total_time
 
-    os.makedirs('../data/', exist_ok=True)
-    torch.save(parameters, '../data/parameters_%d.pt'%n)
+    os.makedirs('../../data/', exist_ok=True)
+    torch.save(parameters, '../../data/parameters_%d.pt'%n)
 
 
 def load_parameters():
-    return torch.load('../data/parameters.pt')
+    return torch.load('../../data/parameters.pt')
 
 
 def evaluate(dynamics, theta_0, controller, total_time, n_interactions):

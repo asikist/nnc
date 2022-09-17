@@ -145,7 +145,8 @@ if __name__ == '__main__':
                                       graph_folder
                                       )
 
-
-
-
+    ### Generate single_init.pt ###
+    ### Maybe it works(doge   ！！！！！Chos1nz   ###
+    single_init_params = torch.rand([n_nodes])
+    torch.save(single_init_params, data_path + 'single_init.pt')
 

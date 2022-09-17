@@ -83,7 +83,7 @@ def prepare_target_states(initial_states: torch.Tensor,
 if __name__ == '__main__':
     number_nodes = 1024  # number of nodes per graph
     n_samples = 100  # total samples of initial and target state pairs
-    data_path = '../../../data/parameters/ct_lti'  # local folder that the graph data files are stored in
+    data_path = '../../../data/parameters/ct_lti/'  # local folder that the graph data files are stored in
 
     os.makedirs(data_path, exist_ok=True)
 
