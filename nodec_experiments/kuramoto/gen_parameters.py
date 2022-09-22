@@ -146,7 +146,7 @@ if __name__ == '__main__':
                                       )
 
     ### Generate single_init.pt ###
-    ### Maybe it works(doge   ¡ª¡ª¡ª¡ª¡ªChos1nz   ###
+    ### Maybe it works(doge   â€”â€”Chos1nz   ###
     single_init_params = torch.rand([n_nodes])
     torch.save(single_init_params, data_path + 'single_init.pt')
 
