@@ -98,7 +98,7 @@ def prepare_initial_state(initial_infection_nodes, n_nodes, graph_folder):
 if __name__ == '__main__':
     number_nodes = 1024  # number of nodes per graph
     n_samples = 100  # total samples of initial and target state pairs
-    data_path = '../data/parameters/sirx/'  # local folder that the graph data files are stored in
+    data_path = '../../../data/parameters/sirx/'  # local folder that the graph data files are stored in
 
     os.makedirs(data_path, exist_ok=True)
 
